@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Trợ lý đọc AI | Kệ Sách</title><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="portal.css"></head>
+<body>
+  <header class="portal-header">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">K</span>
+      <span>Kệ Sách<span class="brand-dot">.</span></span>
+    </a>
+    <nav class="portal-nav">
+      <a href="index.html">Trang chủ</a>
+      <a href="catalog.html">Khám phá</a>
+      <a class="current" href="chatbot.html">Trợ lý AI</a>
+      <a href="library.html">Tủ sách</a>
+      <a href="history.html">Lịch sử</a>
+      <a href="flashcards.html">Flashcard</a>
+      <a href="membership.html">Gói hội viên</a>
+    </nav>
+    <a class="portal-user" href="account.html">
+      <span class="avatar">H</span>
+      <span>
+        <strong>Hai Nguyen</strong>
+        <small>10 lượt AI còn lại</small>
+      </span>
+    </a>
+  </header>
+  <main class="page-wrap">
+    <div class="page-title">
+      <div>
+        <div class="breadcrumb">
+          <a href="index.html">Trang chủ</a> / Trợ lý AI
+        </div>
+        <h1>Trò chuyện cùng sách</h1>
+        <p>Tìm tài liệu bằng ngôn ngữ tự nhiên, hỏi đáp và khám phá ý tưởng mới.</p>
+      </div>
+      <span class="tag tag-blue">✦ 10 lượt miễn phí</span>
+    </div>
+    <section class="two-col" style="grid-template-columns:minmax(0,1.55fr) minmax(270px,.8fr);align-items:start">
+      <article class="panel panel-pad">
+        <div class="panel-heading"><div><h2>Trợ lý Kệ Sách</h2><p><i class="status-dot"></i> Sẵn sàng giúp bạn khám phá</p></div><span class="tag">HÔM NAY</span></div>
+        <div class="review-card" style="padding:14px;background:#f8faf6;border:1px solid #eef0ea;border-radius:6px"><div class="review-head"><strong>✦ Trợ lý Kệ Sách</strong><span class="muted small">09:41</span></div><p>Chào Hải! Mình có thể giúp bạn tìm sách, tóm tắt nội dung hoặc giải đáp câu hỏi về tài liệu đang đọc. Bạn đang muốn khám phá điều gì?</p><div style="display:flex;flex-wrap:wrap;gap:6px"><a class="tag" href="#chat-input">Tìm sách theo chủ đề</a><a class="tag" href="reader.html">Hỏi về sách đang đọc</a><a class="tag" href="flashcards.html">Tạo flashcard</a></div></div>
+        <div class="review-card" style="display:flex;justify-content:flex-end"><div style="max-width:83%;padding:12px;border-radius:7px;background:#edf3ee"><strong class="small">Bạn</strong><p style="margin-bottom:0">Mình muốn tìm sách về quản lý thời gian cho sinh viên, dễ đọc và có ví dụ thực tế.</p></div></div>
+        <div class="review-card" style="padding:14px;background:#f8faf6;border:1px solid #eef0ea;border-radius:6px"><div class="review-head"><strong>✦ Trợ lý Kệ Sách</strong><span class="muted small">09:42</span></div><p>Mình gợi ý bắt đầu với các sách kỹ năng thực hành và thói quen học tập. Đây là một số tài liệu phù hợp trong thư viện:</p><div class="shelf-row" style="grid-template-columns:47px minmax(0,1fr) auto;gap:10px;padding:8px 0"><img style="width:47px;height:63px" src="./Amazon.com _ kindle store_files/81hoixCs+CL._AC_UL320_.jpg" alt="How to Read a Book"><div><strong style="font-size:10px">How to Read a Book</strong><p style="margin:4px 0">Monica Wood · Kỹ năng đọc · ★ 4.4</p></div><a class="button-small" href="book.html">Xem</a></div><div class="shelf-row" style="grid-template-columns:47px minmax(0,1fr) auto;gap:10px;padding:8px 0"><img style="width:47px;height:63px" src="./Amazon.com _ kindle store_files/81Q4gcQ7CAL._AC_UL320_.jpg" alt="The God of the Woods"><div><strong style="font-size:10px">The God of the Woods</strong><p style="margin:4px 0">Liz Moore · Văn học · ★ 4.6</p></div><a class="button-small" href="book.html">Xem</a></div><div class="reader-tool-links"><a href="catalog.html">Xem tất cả kết quả</a><a href="#chat-input">Tinh chỉnh yêu cầu</a></div></div>
+        <form class="filter-bar" id="chat-input" action="chatbot.html" style="margin-top:15px"><div class="form-control"><label class="sr-only" for="message">Tin nhắn cho trợ lý AI</label><input id="message" name="q" placeholder="Hỏi về sách hoặc nhập chủ đề bạn muốn tìm..."></div><button class="button" type="submit">Gửi ↑</button></form>
+        <p class="muted" style="font-size:9px;text-align:center">Trợ lý AI có thể tạo nội dung chưa chính xác. Hãy kiểm tra thông tin quan trọng.</p>
+      </article>
+      <aside>
+        <section class="panel panel-pad"><div class="panel-heading"><div><h2>Trợ lý có thể giúp</h2><p>Chọn một tác vụ để bắt đầu</p></div></div><div class="reader-tool-links"><a href="catalog.html">⌕ Tìm sách bằng mô tả</a><a href="reader.html">? Hỏi đáp nội dung sách</a><a href="book.html">≋ Tóm tắt tài liệu</a><a href="reader.html#audio">♫ Transcript audiobook</a><a href="reader.html#translate">文 Dịch đoạn văn</a><a href="flashcards.html">▤ Tạo flashcard</a></div></section>
+        <section class="panel panel-pad" style="margin-top:13px"><h2>Gợi ý câu hỏi</h2><div class="category-bars" style="margin-top:12px"><a class="small" href="reader.html">• Tóm tắt chương mình đang đọc</a><a class="small" href="reader.html">• Giải thích từ hoặc đoạn đã chọn</a><a class="small" href="catalog.html">• Tìm sách phù hợp với tâm trạng</a><a class="small" href="flashcards.html">• Tạo bộ thẻ từ chương này</a></div></section>
+        <div class="notice" style="margin-top:13px">Lượt dùng còn lại tháng này: <strong>10 / 10</strong> · <a href="membership.html">Xem gói hội viên</a></div>
+      </aside>
+    </section>
+  </main>
+</body>
+</html>

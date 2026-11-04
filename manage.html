@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Quản lý hệ thống | Kệ Sách</title><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="portal.css"></head>
+<body>
+  <header class="portal-header">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">K</span>
+      <span>Kệ Sách<span class="brand-dot">.</span></span>
+    </a>
+    <nav class="portal-nav">
+      <a href="index.html">Xem website</a>
+      <a href="admin.html">Tổng quan</a>
+      <a class="current" href="manage.html">Quản lý</a>
+      <a href="reports.html">Báo cáo</a>
+    </nav>
+    <a class="portal-user" href="login.html">
+      <span class="avatar">AD</span>
+      <span>
+        <strong>Quản trị viên</strong>
+        <small>Quản trị hệ thống</small>
+      </span>
+    </a>
+  </header>
+  <div class="admin-shell">
+    <aside class="admin-sidebar"><div class="side-label">QUẢN LÝ HỆ THỐNG</div><nav class="side-menu"><a class="active" href="#categories">▧ Danh mục</a><a href="#users">◉ Người dùng</a><a href="#plans">◇ Gói cước</a></nav></aside>
+    <main class="admin-content">
+      <div class="page-title"><div><div class="breadcrumb">Quản trị / Quản lý hệ thống</div><h1>Quản lý dữ liệu</h1><p>Quản lý danh mục, người dùng và gói dịch vụ.</p></div></div>
+      <section class="panel panel-pad" id="categories" style="margin-top:15px"><span id="add-category"></span><span id="edit-category"></span><div class="panel-heading"><div><h2>Danh mục tài liệu</h2><p>Tạo và cập nhật các thể loại, chủ đề hiển thị cho độc giả.</p></div><a class="button-small" href="#add-category">＋ Tạo danh mục</a></div><div class="table-wrap"><table><thead><tr><th>TÊN DANH MỤC</th><th>MÃ</th><th>SỐ TÀI LIỆU</th><th>HIỂN THỊ</th><th>THAO TÁC</th></tr></thead><tbody><tr><td><strong>Văn học</strong></td><td>FICTION</td><td>846</td><td><span class="tag">Đang dùng</span></td><td><a class="button-outline button-small" href="#edit-category">Chỉnh sửa</a></td></tr><tr><td><strong>Kỹ năng sống</strong></td><td>SELF-HELP</td><td>324</td><td><span class="tag">Đang dùng</span></td><td><a class="button-outline button-small" href="#edit-category">Chỉnh sửa</a></td></tr><tr><td><strong>Lịch sử</strong></td><td>HISTORY</td><td>207</td><td><span class="tag">Đang dùng</span></td><td><a class="button-outline button-small" href="#edit-category">Chỉnh sửa</a></td></tr></tbody></table></div></section>
+      <section class="panel panel-pad" id="users" style="margin-top:15px"><span id="lock"></span><div class="panel-heading"><div><h2>Tài khoản người dùng</h2><p>Tìm kiếm theo tên hoặc mã người dùng; quản lý trạng thái truy cập.</p></div></div><form class="filter-bar" action="manage.html#users"><div class="form-control"><label for="user-search">Tên hoặc mã người dùng</label><input id="user-search" placeholder="Ví dụ: Nguyễn Minh Anh / USR-1042"></div><button class="button" type="submit">Tìm người dùng</button></form><div class="table-wrap"><table><thead><tr><th>NGƯỜI DÙNG</th><th>MÃ</th><th>GÓI</th><th>HOẠT ĐỘNG GẦN NHẤT</th><th>TRẠNG THÁI</th><th>THAO TÁC</th></tr></thead><tbody><tr><td><strong>Trần Minh Anh</strong><small>minhanh@example.com</small></td><td>USR-1042</td><td>Plus</td><td>Hôm nay</td><td><span class="tag">Hoạt động</span></td><td><a class="button-danger button-small" href="#lock">Khóa</a></td></tr><tr><td><strong>Lê Quốc Bảo</strong><small>quocbao@example.com</small></td><td>USR-1039</td><td>Miễn phí</td><td>Hôm qua</td><td><span class="tag">Hoạt động</span></td><td><a class="button-danger button-small" href="#lock">Khóa</a></td></tr></tbody></table></div></section>
+      <section class="panel panel-pad" id="plans" style="margin-top:15px"><span id="new-plan"></span><span id="edit-plan"></span><div class="panel-heading"><div><h2>Gói cước và giao dịch</h2><p>Thiết lập quyền lợi, giá và theo dõi đăng ký/gia hạn.</p></div><a class="button-small" href="#new-plan">＋ Tạo gói</a></div><div class="table-wrap"><table><thead><tr><th>GÓI CƯỚC</th><th>GIÁ</th><th>QUYỀN LỢI AI / THÁNG</th><th>ĐĂNG KÝ ĐANG HOẠT ĐỘNG</th><th>TRẠNG THÁI</th><th>THAO TÁC</th></tr></thead><tbody><tr><td><strong>Miễn phí</strong></td><td>0₫</td><td>5 lượt</td><td>5.418</td><td><span class="tag">Đang cung cấp</span></td><td><a class="button-outline button-small" href="#edit-plan">Chỉnh sửa</a></td></tr><tr><td><strong>Kệ Sách Plus</strong></td><td>49.000₫ / tháng</td><td>100 lượt</td><td>2.176</td><td><span class="tag">Đang cung cấp</span></td><td><a class="button-outline button-small" href="#edit-plan">Chỉnh sửa</a></td></tr></tbody></table></div></section>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Khám phá sách | Kệ Sách</title><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="portal.css">
+</head>
+<body>
+  <header class="portal-header">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">K</span>
+      <span>Kệ Sách<span class="brand-dot">.</span></span>
+    </a>
+    <nav class="portal-nav">
+      <a href="index.html">Trang chủ</a>
+      <a class="current" href="catalog.html">Khám phá</a>
+      <a href="chatbot.html">Trợ lý AI</a>
+      <a href="library.html">Tủ sách</a>
+      <a href="history.html">Lịch sử</a>
+      <a href="flashcards.html">Flashcard</a>
+      <a href="membership.html">Gói hội viên</a>
+    </nav>
+    <a class="portal-user" href="account.html">
+      <span class="avatar">H</span>
+      <span>
+        <strong>Hai Nguyen</strong>
+        <small>Tài khoản của tôi</small>
+      </span>
+    </a>
+  </header>
+  <main class="page-wrap catalog-page">
+    <div class="page-title">
+      <div>
+        <div class="breadcrumb">
+          <a href="index.html">Trang chủ</a> / Khám phá
+        </div>
+        <h1>Khám phá thư viện</h1>
+        <p>Tìm cuốn sách tiếp theo dành cho bạn.</p>
+      </div>
+      <a class="button-outline button" href="reader.html">♫ Nghe sách nói</a>
+    </div>
+    <section class="catalog-categories" aria-labelledby="category-title">
+      
+      <div class="category-grid">
+        <a class="category-card" href="#catalog-books" data-category="thiếu nhi"><img src="./Amazon.com _ kindle store_files/91BPoOsa6YL._AC_UL320_.jpg" alt=""><span class="category-copy"><strong>Thiếu nhi</strong><small>Sách hay cho độc giả nhí</small></span><span class="category-arrow" aria-hidden="true">↗</span></a>
+        <a class="category-card" href="#catalog-books" data-category="lãng mạn"><img src="./Amazon.com _ kindle store_files/71CVMskrq+L._AC_UL320_.jpg" alt=""><span class="category-copy"><strong>Lãng mạn</strong><small>Những câu chuyện chạm đến trái tim</small></span><span class="category-arrow" aria-hidden="true">↗</span></a>
+        <a class="category-card" href="#catalog-books" data-category="văn hóa"><img src="./Amazon.com _ kindle store_files/81o0W3k8oyL._AC_UL320_.jpg" alt=""><span class="category-copy"><strong>Văn hóa</strong><small>Khám phá những góc nhìn mới</small></span><span class="category-arrow" aria-hidden="true">↗</span></a>
+        <a class="category-card" href="#catalog-books" data-category="lịch sử"><img src="./Amazon.com _ kindle store_files/91S6JMLcDfL._AC_UL320_.jpg" alt=""><span class="category-copy"><strong>Lịch sử</strong><small>Những câu chuyện vượt thời gian</small></span><span class="category-arrow" aria-hidden="true">↗</span></a>
+        <a class="category-card" href="#catalog-books" data-category="văn học viễn tưởng"><img src="./Amazon.com _ kindle store_files/817DMUyHZUL._AC_UL320_.jpg" alt=""><span class="category-copy"><strong>Văn học viễn tưởng</strong><small>Thế giới ngoài sức tưởng tượng</small></span><span class="category-arrow" aria-hidden="true">↗</span></a>
+        <a class="category-card" href="#catalog-books" data-category="kinh dị"><img src="./Amazon.com _ kindle store_files/8196x-1wIOL._AC_UL320_.jpg" alt=""><span class="category-copy"><strong>Kinh dị</strong><small>Hồi hộp đến trang cuối cùng</small></span><span class="category-arrow" aria-hidden="true">↗</span></a>
+        <a class="category-card" href="#catalog-books" data-category="khoa học"><img src="./Amazon.com _ kindle store_files/81Q4gcQ7CAL._AC_UL320_.jpg" alt=""><span class="category-copy"><strong>Khoa học</strong><small>Hiểu thêm về thế giới quanh ta</small></span><span class="category-arrow" aria-hidden="true">↗</span></a>
+        <a class="category-card" href="#catalog-books" data-category="truyền cảm hứng"><img src="./Amazon.com _ kindle store_files/9134SJNuHxL._AC_UL320_.jpg" alt=""><span class="category-copy"><strong>Truyền cảm hứng</strong><small>Nuôi dưỡng động lực mỗi ngày</small></span><span class="category-arrow" aria-hidden="true">↗</span></a>
+        <a class="category-card" href="#catalog-books" data-category="kĩ năng sống"><img src="./Amazon.com _ kindle store_files/81hoixCs+CL._AC_UL320_.jpg" alt=""><span class="category-copy"><strong>Kĩ năng sống</strong><small>Phát triển bản thân từng bước</small></span><span class="category-arrow" aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+    <div class="catalog-layout">
+      <form class="panel catalog-sidebar" action="catalog.html" id="catalog-filter-form">
+        <h2 class="sidebar-title"><span aria-hidden="true">☷</span> Bộ lọc tìm kiếm</h2>
+        <div class="sidebar-search"><input id="q" name="q" type="search" placeholder="Tên sách, tác giả, chủ đề..." aria-label="Từ khóa"></div>
+        <fieldset class="filter-group">
+          <legend>Ngôn ngữ</legend>
+          <label class="filter-check"><input type="checkbox" name="language" value="vi"><span>Tiếng Việt</span></label>
+          <label class="filter-check"><input type="checkbox" name="language" value="en"><span>English</span></label>
+        </fieldset>
+        <fieldset class="filter-group">
+          <legend>Theo danh mục</legend>
+          <label class="filter-check"><input type="checkbox" name="category" value="thiếu nhi"><span>Thiếu nhi</span></label>
+          <label class="filter-check"><input type="checkbox" name="category" value="lãng mạn"><span>Lãng mạn</span></label>
+          <label class="filter-check"><input type="checkbox" name="category" value="văn hóa"><span>Văn hóa</span></label>
+          <label class="filter-check"><input type="checkbox" name="category" value="lịch sử"><span>Lịch sử</span></label>
+          <label class="filter-check"><input type="checkbox" name="category" value="văn học viễn tưởng"><span>Văn học viễn tưởng</span></label>
+          <label class="filter-check"><input type="checkbox" name="category" value="kinh dị"><span>Kinh dị</span></label>
+          <label class="filter-check"><input type="checkbox" name="category" value="khoa học"><span>Khoa học</span></label>
+          <label class="filter-check"><input type="checkbox" name="category" value="truyền cảm hứng"><span>Truyền cảm hứng</span></label>
+          <label class="filter-check"><input type="checkbox" name="category" value="kĩ năng sống"><span>Kĩ năng sống</span></label>
+        </fieldset>
+        <fieldset class="filter-group">
+          <legend>Định dạng</legend>
+          <label class="filter-check"><input type="checkbox" name="format" value="ebook"><span>Ebook</span></label>
+          <label class="filter-check"><input type="checkbox" name="format" value="audio"><span>Audiobook</span></label>
+        </fieldset>
+        <fieldset class="filter-group">
+          <legend>Đánh giá</legend>
+          <label class="filter-check rating-check"><input type="radio" name="rating" value="4"><span class="rating-stars">★★★★★</span><span class="rating-caption">trở lên</span></label>
+          <label class="filter-check rating-check"><input type="radio" name="rating" value="3"><span class="rating-stars">★★★★<span class="rating-empty">★</span></span><span class="rating-caption">trở lên</span></label>
+          <label class="filter-check rating-check"><input type="radio" name="rating" value="2"><span class="rating-stars">★★★<span class="rating-empty">★★</span></span><span class="rating-caption">trở lên</span></label>
+        </fieldset>
+        <div class="sidebar-actions">
+          <button class="button catalog-search-button" type="submit">Áp dụng</button>
+          <button class="sidebar-reset" type="button">Xóa tất cả</button>
+        </div>
+      </form>
+      <section class="panel panel-pad catalog-results" id="catalog-books" aria-labelledby="results-title">
+      <div class="panel-heading"><div><h2 id="results-title">Kết quả được đề xuất</h2><p id="results-summary">Ưu tiên sách phù hợp với lịch sử và sở thích đọc của bạn · 128 cuốn sách</p></div></div>
+      <div class="tab-row"><a class="active" href="#all" id="all">Tất cả</a><a href="#popular" id="popular">Phổ biến</a><a href="#new" id="new">Mới phát hành</a><a href="#fiction" id="fiction">Văn học</a><a href="#audio" id="audio">Audiobook</a></div>
+      <div class="catalog-sortbar">
+        <span class="sort-label">Sắp xếp theo</span>
+        <button class="sort-option active" type="button" data-sort="relevance" aria-pressed="true">Liên quan</button>
+        <button class="sort-option" type="button" data-sort="rating" aria-pressed="false">Đánh giá cao</button>
+        <button class="sort-option" type="button" data-sort="title" aria-pressed="false">Tên sách A–Z</button>
+        <span class="sort-count" id="sort-count">8 cuốn sách</span>
+      </div>
+      <div class="book-grid">
+        <article class="book-tile panel" data-category="văn học viễn tưởng" data-format="ebook" data-language="en" data-rating="4.6"><a class="tile-cover" href="book.html"><img src="./Amazon.com _ kindle store_files/81Q4gcQ7CAL._AC_UL320_.jpg" alt="The God of the Woods"></a><span class="tag">Gợi ý cho bạn</span><h3><a href="book.html">The God of the Woods</a></h3><p>Liz Moore · Văn học</p><div class="tile-rating">★★★★★ <span class="muted">4.6</span></div><div class="tile-access"><span>Ebook</span><strong>Trong gói hội viên</strong></div></article>
+        <article class="book-tile panel" data-category="lịch sử" data-format="ebook" data-language="en" data-rating="4.8"><a class="tile-cover" href="book.html"><img src="./Amazon.com _ kindle store_files/91S6JMLcDfL._AC_UL320_.jpg" alt="The Frozen River"></a><span class="tag tag-gold">Bán chạy</span><h3><a href="book.html">The Frozen River</a></h3><p>Ariel Lawhon · Lịch sử</p><div class="tile-rating">★★★★★ <span class="muted">4.8</span></div><div class="tile-access"><span>Ebook</span><strong>Trong gói hội viên</strong></div></article>
+        <article class="book-tile panel" data-category="lãng mạn" data-format="both" data-language="en" data-rating="4.5"><a class="tile-cover" href="book.html"><img src="./Amazon.com _ kindle store_files/81D4ATVRKPL._AC_UL320_.jpg" alt="Whistler"></a><span class="tag tag-blue">Có audiobook</span><h3><a href="book.html">Whistler</a></h3><p>Ann Patchett · Tiểu thuyết</p><div class="tile-rating">★★★★★ <span class="muted">4.5</span></div><div class="tile-access"><span>Ebook + Audio</span><strong>Trong gói hội viên</strong></div></article>
+        <article class="book-tile panel" data-category="lãng mạn" data-format="ebook" data-language="en" data-rating="4.7"><a class="tile-cover" href="book.html"><img src="./Amazon.com _ kindle store_files/71CVMskrq+L._AC_UL320_.jpg" alt="The Second Chance Book Club"></a><span class="tag tag-gold">Được yêu thích</span><h3><a href="book.html">The Second Chance Book Club</a></h3><p>Stephanie Butland · Hư cấu</p><div class="tile-rating">★★★★★ <span class="muted">4.7</span></div><div class="tile-access"><span>Ebook</span><strong>Trong gói hội viên</strong></div></article>
+        <article class="book-tile panel" data-category="kĩ năng sống" data-format="ebook" data-language="en" data-rating="4.4"><a class="tile-cover" href="book.html"><img src="./Amazon.com _ kindle store_files/81hoixCs+CL._AC_UL320_.jpg" alt="How to Read a Book"></a><span class="tag">Kỹ năng đọc</span><h3><a href="book.html">How to Read a Book</a></h3><p>Monica Wood · Kỹ năng</p><div class="tile-rating">★★★★★ <span class="muted">4.4</span></div><div class="tile-access"><span>Ebook</span><strong>Trong gói hội viên</strong></div></article>
+        <article class="book-tile panel" data-category="kinh dị" data-format="both" data-language="en" data-rating="4.6"><a class="tile-cover" href="book.html"><img src="./Amazon.com _ kindle store_files/91x4oeL+pLL._AC_UL320_.jpg" alt="The Honeytrap"></a><span class="tag tag-blue">Audiobook</span><h3><a href="book.html">The Honeytrap</a></h3><p>Saul Herzog · Trinh thám</p><div class="tile-rating">★★★★★ <span class="muted">4.6</span></div><div class="tile-access"><span>Ebook + Audio</span><strong>Trong gói hội viên</strong></div></article>
+        <article class="book-tile panel" data-category="kinh dị" data-format="ebook" data-language="en" data-rating="4.5"><a class="tile-cover" href="book.html"><img src="./Amazon.com _ kindle store_files/91BW8m95iOL._AC_UL320_.jpg" alt="The Asset"></a><span class="tag tag-gold">Phổ biến</span><h3><a href="book.html">The Asset</a></h3><p>Saul Herzog · Hành động</p><div class="tile-rating">★★★★★ <span class="muted">4.5</span></div><div class="tile-access"><span>Ebook</span><strong>Trong gói hội viên</strong></div></article>
+        <article class="book-tile panel" data-category="văn học viễn tưởng" data-format="ebook" data-language="en" data-rating="4.4"><a class="tile-cover" href="book.html"><img src="./Amazon.com _ kindle store_files/81MXFndVZrL._AC_UL320_.jpg" alt="The Existential Worries of Mags Munroe"></a><span class="tag">Gợi ý cho bạn</span><h3><a href="book.html">The Existential Worries of Mags Munroe</a></h3><p>Jean Grainger · Văn học</p><div class="tile-rating">★★★★★ <span class="muted">4.4</span></div><div class="tile-access"><span>Ebook</span><strong>Trong gói hội viên</strong></div></article>
+      </div>
+      <p class="catalog-empty" hidden>Không tìm thấy sách phù hợp. Hãy thử thay đổi bộ lọc nhé.</p>
+      </section>
+    </div>
+  </main>
+  <script>
+    const filterForm = document.querySelector("#catalog-filter-form");
+    const keywordInput = document.querySelector("#q");
+    const categoryFilters = [...filterForm.querySelectorAll('input[name="category"]')];
+    const formatFilters = [...filterForm.querySelectorAll('input[name="format"]')];
+    const languageFilters = [...filterForm.querySelectorAll('input[name="language"]')];
+    const ratingFilters = [...filterForm.querySelectorAll('input[name="rating"]')];
+    const bookTiles = [...document.querySelectorAll(".book-tile")];
+    const emptyMessage = document.querySelector(".catalog-empty");
+    const resultsTitle = document.querySelector("#results-title");
+    const resultsSummary = document.querySelector("#results-summary");
+    const sortCount = document.querySelector("#sort-count");
+    const bookGrid = document.querySelector(".book-grid");
+    let activeSort = "relevance";
+
+    function sortBooks(books) {
+      const sortedBooks = [...books];
+
+      if (activeSort === "rating") {
+        sortedBooks.sort((first, second) => Number(second.dataset.rating) - Number(first.dataset.rating));
+      } else if (activeSort === "title") {
+        sortedBooks.sort((first, second) => first.querySelector("h3").textContent.localeCompare(
+          second.querySelector("h3").textContent,
+          "vi"
+        ));
+      }
+
+      sortedBooks.forEach((book) => bookGrid.append(book));
+    }
+
+    function applyFilters() {
+      const selectedCategories = categoryFilters.filter((filter) => filter.checked).map((filter) => filter.value);
+      const selectedFormats = formatFilters.filter((filter) => filter.checked).map((filter) => filter.value);
+      const selectedLanguages = languageFilters.filter((filter) => filter.checked).map((filter) => filter.value);
+      const minimumRating = Number(ratingFilters.find((filter) => filter.checked)?.value) || 0;
+      const keyword = keywordInput.value.trim().toLocaleLowerCase("vi");
+      const matchingBooks = bookTiles.filter((book) => {
+        const matchesCategory = !selectedCategories.length || selectedCategories.includes(book.dataset.category);
+        const matchesFormat = !selectedFormats.length || selectedFormats.some(
+          (format) => book.dataset.format === format || book.dataset.format === "both"
+        );
+        const matchesLanguage = !selectedLanguages.length || selectedLanguages.includes(book.dataset.language);
+        const matchesRating = Number(book.dataset.rating) >= minimumRating;
+        const matchesKeyword = !keyword || book.textContent.toLocaleLowerCase("vi").includes(keyword);
+
+        return matchesCategory && matchesFormat && matchesLanguage && matchesRating && matchesKeyword;
+      });
+
+      sortBooks(matchingBooks);
+      bookTiles.forEach((book) => {
+        book.hidden = !matchingBooks.includes(book);
+      });
+      emptyMessage.hidden = matchingBooks.length > 0;
+      sortCount.textContent = `${matchingBooks.length} cuốn sách`;
+      resultsTitle.textContent = selectedCategories.length === 1
+        ? `Sách chủ đề ${categoryFilters.find((filter) => filter.checked).nextElementSibling.textContent}`
+        : keyword ? "Kết quả tìm kiếm" : "Kết quả được đề xuất";
+      resultsSummary.textContent = `${matchingBooks.length} cuốn sách phù hợp với bộ lọc`;
+    }
+
+    document.querySelectorAll(".category-card").forEach((card) => {
+      card.addEventListener("click", () => {
+        categoryFilters.forEach((filter) => {
+          filter.checked = filter.value === card.dataset.category;
+        });
+        applyFilters();
+      });
+    });
+
+    filterForm.querySelectorAll('input[type="checkbox"], input[type="radio"]')
+      .forEach((filter) => filter.addEventListener("change", applyFilters));
+    keywordInput.addEventListener("input", applyFilters);
+    filterForm.addEventListener("submit", (event) => {
+      event.preventDefault();
+      applyFilters();
+    });
+    document.querySelector(".sidebar-reset").addEventListener("click", () => {
+      filterForm.reset();
+      applyFilters();
+    });
+    document.querySelectorAll(".sort-option").forEach((button) => {
+      button.addEventListener("click", () => {
+        activeSort = button.dataset.sort;
+        document.querySelectorAll(".sort-option").forEach((option) => {
+          const isActive = option === button;
+          option.classList.toggle("active", isActive);
+          option.setAttribute("aria-pressed", String(isActive));
+        });
+        applyFilters();
+      });
+    });
+
+    const query = new URLSearchParams(window.location.search);
+    const categoryValues = query.getAll("category").flatMap((category) => category.split(","));
+    categoryFilters.forEach((filter) => {
+      filter.checked = categoryValues.includes(filter.value);
+    });
+    const formatValues = query.getAll("format");
+    formatFilters.forEach((filter) => {
+      filter.checked = formatValues.includes(filter.value);
+    });
+    const languageValues = query.getAll("language");
+    languageFilters.forEach((filter) => {
+      filter.checked = languageValues.includes(filter.value);
+    });
+    keywordInput.value = query.get("q") || "";
+    const ratingFromUrl = query.get("rating");
+    const ratingFilter = ratingFilters.find((filter) => filter.value === ratingFromUrl);
+    if (ratingFilter) ratingFilter.checked = true;
+    applyFilters();
+  </script>
+</body>
+</html>

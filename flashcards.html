@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Bộ flashcard | Kệ Sách</title><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="portal.css"></head>
+<body>
+  <header class="portal-header">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">K</span>
+      <span>Kệ Sách<span class="brand-dot">.</span></span>
+    </a>
+    <nav class="portal-nav">
+      <a href="index.html">Trang chủ</a>
+      <a href="catalog.html">Khám phá</a>
+      <a href="chatbot.html">Trợ lý AI</a>
+      <a href="library.html">Tủ sách</a>
+      <a href="history.html">Lịch sử</a>
+      <a class="current" href="flashcards.html">Flashcard</a>
+      <a href="membership.html">Gói hội viên</a>
+    </nav>
+    <a class="portal-user" href="account.html">
+      <span class="avatar">H</span>
+      <span>
+        <strong>Hai Nguyen</strong>
+        <small>Tài khoản của tôi</small>
+      </span>
+    </a>
+  </header>
+  <main class="page-wrap">
+    <div class="page-title">
+      <div>
+        <div class="breadcrumb">
+          <a href="index.html">Trang chủ</a> / Bộ flashcard
+        </div>
+        <h1>Flashcard của bạn</h1>
+        <p>Ôn tập từ vựng và ý tưởng đã lưu khi đọc sách.</p>
+      </div>
+      <a class="button" href="reader.html">＋ Tạo từ sách đang đọc</a>
+    </div>
+    <div class="tab-row">
+      <a class="active" href="#sets" id="sets">Bộ thẻ của tôi · 3 bộ</a>
+      <a href="#recent" id="recent">Ôn tập gần đây</a>
+      <a href="#create" id="create">Tạo bộ thẻ</a>
+    </div>
+    <div class="three-col">
+      <article class="panel panel-pad"><span class="tag tag-blue">TIẾNG ANH</span><h2 style="margin:12px 0 5px">Từ vựng · The God of the Woods</h2><p class="small muted">Tạo từ chương 1 · 24 thẻ</p><div class="flashcard" style="margin:16px 0"><span class="word">foreboding</span><span class="definition">a feeling that something bad will happen</span><span class="card-meta">1 / 24 · Nhấn để lật thẻ</span></div><div style="display:flex;gap:8px"><a class="button-small" href="#sets">Ôn tập</a><a class="button-outline button-small" href="#sets">Chỉnh sửa</a><a class="button-outline button-small" href="#sets">Xóa bộ</a></div></article>
+      <article class="panel panel-pad"><span class="tag tag-gold">Ý TƯỞNG</span><h2 style="margin:12px 0 5px">Ghi chú đọc sách</h2><p class="small muted">The Frozen River · 12 thẻ</p><div class="flashcard" style="margin:16px 0"><span class="word">Góc nhìn nhân vật</span><span class="definition">Manh mối được kể qua nhiều góc nhìn trong cùng một sự kiện.</span><span class="card-meta">Được tạo từ ghi chú trang 38</span></div><div style="display:flex;gap:8px"><a class="button-small" href="#sets">Ôn tập</a><a class="button-outline button-small" href="#sets">Chỉnh sửa</a></div></article>
+      <article class="panel panel-pad"><span class="tag">AI TẠO</span><h2 style="margin:12px 0 5px">Từ mới trong tháng</h2><p class="small muted">Nhiều tài liệu · 36 thẻ</p><div class="flashcard" style="margin:16px 0"><span class="word">perseverance</span><span class="definition">continued effort to do or achieve something despite difficulties</span><span class="card-meta">Đã ôn 8 / 36 thẻ</span></div><div style="display:flex;gap:8px"><a class="button-small" href="#sets">Ôn tập</a><a class="button-outline button-small" href="#sets">Chỉnh sửa</a></div></article>
+    </div>
+    <section class="panel panel-pad" style="margin-top:16px"><div class="panel-heading"><div><h2>Tạo flashcard mới</h2><p>Nhập một từ hoặc đoạn trích để tạo thẻ, hoặc yêu cầu AI tạo bộ thẻ theo chương.</p></div></div><div class="form-grid"><div class="form-control"><label for="source">Nguồn tài liệu</label><select id="source"><option>The God of the Woods · Chương 1</option><option>The Frozen River</option></select></div><div class="form-control"><label for="quantity">Số lượng thẻ AI đề xuất</label><select id="quantity"><option>10 thẻ</option><option>20 thẻ</option></select></div><div class="form-control wide"><label for="prompt">Từ hoặc nội dung cần chuyển thành thẻ</label><textarea id="prompt" placeholder="Dán nội dung hoặc mô tả chủ đề..."></textarea></div></div><div style="display:flex;gap:8px;margin-top:12px"><a class="button" href="#create">✨ Tạo bản nháp bằng AI</a><a class="button-outline button" href="#create">＋ Tạo thủ công</a></div></section>
+  </main>
+</body>
+</html>

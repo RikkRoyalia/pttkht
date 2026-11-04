@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Đang đọc | Kệ Sách</title><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="portal.css"></head>
+<body>
+  <header class="portal-header"><a class="brand" href="index.html"><span class="brand-mark">K</span><span>Kệ Sách<span class="brand-dot">.</span></span></a><nav class="portal-nav"><a href="index.html">Trang chủ</a><a class="current" href="catalog.html">Khám phá</a><a href="library.html">Tủ sách</a><a href="history.html">Lịch sử</a><a href="flashcards.html">Flashcard</a><a href="membership.html">Gói hội viên</a></nav><a class="portal-user" href="account.html"><span class="avatar">H</span><span><strong>Hai Nguyen</strong><small>Tài khoản của tôi</small></span></a></header>
+  <main class="reader-page">
+    <div class="breadcrumb"><a href="index.html">Trang chủ</a> / <a href="catalog.html">Khám phá</a> / <a href="book.html">Chi tiết sách</a> / <a href="reader.html">Trình đọc</a></div>
+    <div class="reader-toolbar"><a href="book.html">← Chi tiết tài liệu</a><span class="reader-book">The God of the Woods <span class="tag">Ebook</span></span><a href="history.html">Lưu tiến độ · Thoát</a></div>
+    <div class="reader-layout">
+      <article class="reading-sheet"><button class="reader-fullscreen-toggle" type="button" aria-pressed="false">⛶ Toàn màn hình</button><span class="sr-only" id="reader-fullscreen-status" role="status" aria-live="polite"></span><div class="chapter">Bản xem trước giao diện đọc</div><h1>Một trang sách mẫu</h1><p>Đây là nội dung minh họa cho giao diện đọc ebook. Trong hệ thống hoàn chỉnh, phần văn bản sẽ được thay bằng nội dung tài liệu mà bạn đã chọn.</p><p>Bạn có thể thay đổi cỡ chữ, màu nền và khoảng cách dòng để tạo trải nghiệm đọc thoải mái hơn. Tiến độ đọc được lưu lại để có thể tiếp tục từ đúng vị trí đã dừng.</p><p>Chọn một từ hoặc đoạn văn bản để xem các công cụ hỗ trợ như dịch nghĩa, giải thích nội dung hoặc tạo flashcard cá nhân.</p><p><mark>Đoạn văn bản được đánh dấu sẽ làm nổi bật phần bạn đang thao tác.</mark> Trợ lý AI có thể hỗ trợ tóm tắt hoặc trả lời câu hỏi dựa trên nội dung tài liệu.</p><p>Khi đọc xong, bạn có thể để lại đánh giá, lưu ghi chú hoặc quay lại trang chi tiết để xem nhận xét của những độc giả khác.</p><div class="reader-progress"><span>Chương 1 / 32</span><div class="progress"><span style="width:18%"></span></div><span>18%</span></div></article>
+      <aside class="reader-tools">
+        <button class="reader-tools-toggle" type="button" aria-controls="reader-tool-panels" aria-expanded="false" aria-label="Mở công cụ đọc">✦</button>
+        <div class="reader-tool-panels" id="reader-tool-panels">
+          <section class="panel panel-pad"><h2>✦ Trợ lý đọc AI</h2><p>Hỏi về nội dung đang đọc, yêu cầu tóm tắt hoặc giải thích một đoạn.</p><div class="form-control"><textarea id="chat" placeholder="Ví dụ: Tóm tắt chương này giúp tôi..."></textarea></div><a class="button-small" href="#chat">Gửi câu hỏi</a><div class="reader-tool-links"><a href="#summary">Tóm tắt chương</a><a href="#translate">Dịch đoạn chọn</a><a href="flashcards.html">Tạo flashcard</a></div></section>
+          <section class="panel panel-pad" id="translate"><h2>Dịch đoạn đang chọn</h2><p>“A perfect July morning.”</p><div class="notice">Một buổi sáng tháng Bảy hoàn hảo.</div><div class="reader-tool-links"><a href="flashcards.html">Lưu từ vào flashcard</a></div></section>
+          <section class="panel panel-pad" id="audio"><h2>Nghe audiobook</h2><div class="audio-player"><span class="play-button">▶</span><span><strong>Chương 1 · The Camp</strong><small>02:18 / 16:42</small></span></div><div class="reader-tool-links"><a href="#transcript">Mở transcript</a><a href="#audio">Tốc độ 1×</a></div><p id="transcript"><strong>Transcript:</strong> “It was a perfect July morning...”</p></section>
+          <section class="panel panel-pad" id="summary"><h2>Ghi chú của tôi</h2><div class="form-control"><textarea id="notes" placeholder="Ghi lại suy nghĩ khi đọc..."></textarea></div><a class="button-small" href="#notes">Lưu ghi chú</a></section>
+        </div>
+      </aside>
+    </div>
+  </main>
+  <script>
+    const readerLayout = document.querySelector(".reader-layout");
+    const fullscreenButton = document.querySelector(".reader-fullscreen-toggle");
+    const fullscreenStatus = document.querySelector("#reader-fullscreen-status");
+    const readerTools = document.querySelector(".reader-tools");
+    const readerToolsToggle = document.querySelector(".reader-tools-toggle");
+
+    fullscreenButton.addEventListener("click", async () => {
+      fullscreenStatus.textContent = "";
+
+      try {
+        if (document.fullscreenElement) {
+          await document.exitFullscreen();
+        } else {
+          await readerLayout.requestFullscreen();
+        }
+      } catch (error) {
+        fullscreenStatus.textContent = "Không thể thay đổi chế độ toàn màn hình.";
+        console.error("Không thể thay đổi chế độ toàn màn hình:", error);
+      }
+    });
+
+    document.addEventListener("fullscreenchange", () => {
+      const isFullscreen = document.fullscreenElement === readerLayout;
+      fullscreenButton.setAttribute("aria-pressed", String(isFullscreen));
+      fullscreenButton.textContent = isFullscreen ? "⛶ Thoát toàn màn hình" : "⛶ Toàn màn hình";
+      readerTools.classList.remove("is-open");
+      readerToolsToggle.setAttribute("aria-expanded", "false");
+      readerToolsToggle.setAttribute("aria-label", "Mở công cụ đọc");
+    });
+
+    readerToolsToggle.addEventListener("click", () => {
+      const isOpen = readerTools.classList.toggle("is-open");
+      readerToolsToggle.setAttribute("aria-expanded", String(isOpen));
+      readerToolsToggle.setAttribute("aria-label", isOpen ? "Đóng công cụ đọc" : "Mở công cụ đọc");
+    });
+  </script>
+</body>
+</html>
